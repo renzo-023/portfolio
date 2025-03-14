@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+  <header class="cabecalho">
+    <nav class="cabecalho__menu">
+      <a class="cabecalho__menu__link" href="index.html">Home</a>
+      <a class="cabecalho__menu__link" href="about.html">Sobre</a>
+    </nav>
+  </header>
   <body>
     <main class="apresentacao">
       <section class="apresentacao__conteudo">
@@ -23,23 +29,42 @@
           Vamos conversar?
         </p>
         <div class="apresentacao__links">
+          <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
           <a
             class="apresentacao__links__link"
-            href="https://instagram.com/rdgs.vicente/"
-            >Instagram</a
+            href="https://github.com/renzo-023/"
+            ><img
+              class="apresentacao__links__link__logo"
+              src="assets/img/github.png"
+              alt="logo do github na cor ciano"
+            />GitHub</a
           >
           <a
             class="apresentacao__links__link"
             href="https://github.com/renzo-023/"
-            >GitHub</a
+            ><img
+              class="apresentacao__links__link__logo"
+              src="assets/img/linkedin.png"
+              alt="logo do linkedin na cor ciano"
+            />LinkedIn</a
+          >
+          <a
+            class="apresentacao__links__link"
+            href="https://github.com/renzo-023/"
+            ><img
+              class="apresentacao__links__link__logo"
+              src="assets/img/twitter-novo.png"
+              alt="logo do twitter na cor ciano"
+            />Twitter</a
           >
         </div>
       </section>
       <img
-        src="./img/foto-gitHub.png"
+        src="./assets/img/foto-gitHub.png"
         alt="foto de perfil do Renzo, usada no GitHub"
         class="foto-perfil"
       />
     </main>
+    <footer><p class="rodape">Desenvolvido por Renzo.</p></footer>
   </body>
 </html>
