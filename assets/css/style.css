@@ -51,19 +51,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 5.375rem;
 }
 
 .foto-perfil {
   border: var(--cor-terciaria);
   border-style: double;
-  width: 22.5rem;
-  border-radius: 2rem;
+  width: 40%;
+  border-radius: 10%;
 }
 
 .apresentacao__conteudo {
   display: flex;
   flex-direction: column;
-  width: 38.4375rem;
+  width: 50%;
   gap: 2.5rem;
 }
 
@@ -98,7 +99,7 @@ body {
   font-size: 1.5rem;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
   display: flex;
   justify-content: center;
   width: 23.625rem;
@@ -117,7 +118,7 @@ body {
   transition: 300ms;
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
   transition: 300ms;
   width: 25rem;
   background-color: var(--cor-hover);
@@ -133,4 +134,23 @@ body {
   color: var(--cor-principal);
   background-color: var(--cor-terciaria);
   padding: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 10%;
+  }
+
+  .cabecalho__menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+  }
+
+  .apresentacao__conteudo {
+    width: auto;
+  }
 }
